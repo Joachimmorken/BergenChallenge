@@ -1,25 +1,26 @@
+/* Setting basic requirements for the whole document */
 body{
      margin:0px;
-        padding:0px;
-        min-width:100%;
-        max-width:100%;
-      
-        height:auto;
-    font-family: 'Arial Bold', sans-serif;
+     padding:0px;
+     min-width:100%;
+     max-width:100%;
+     height:auto;
+     font-family: 'Arial Bold', sans-serif;
 }
 
 .navbar {
     margin-bottom: 0;
 	border-radius: 0;
 
-
 }
+/* The logo in the top left corner of the header/navbar */
 .navbar-brand{
     font-size: 20px;
     
 }
-.navbar-default {
 
+/* The whole navbar */
+.navbar-default {
   background: none;
   background-color: rgba(0, 13, 56, 0.95);
   z-index: 2;
@@ -28,6 +29,7 @@ body{
   top: 0;
   font-size: 14px;
 }
+
 /* Title */
 .navbar-default .navbar-brand {
     color: white;
@@ -87,7 +89,7 @@ body{
 .navbar-default .navbar-toggle .icon-bar {
    
 }
-
+/* The list on the right containing list elements such as: hjem, info, idretter etc.*/
 .collapse{
     right: 40;
     position: absolute;
@@ -100,7 +102,7 @@ footer {
 			padding: 25px;
 }
 
-
+/*Controls the header. The navbar is not part of this code*/
 header{
     overflow: auto;
     height: 100vh;
@@ -112,6 +114,7 @@ header{
     z-index: 1;
 
 }
+/*The background image of the header*/
 #bakgrunn{
     overflow: auto;
     background-image: url(../storage/bilder/bakgrunn.jpg);
@@ -128,31 +131,74 @@ header{
    
 
 }
+
+/* Centering the logo on top of the background image */
 #logo{
     position: absolute;
     width: 50vh;
     z-index: 11;
     margin-top: -3%;   
 }
-/* navbar */
+/* Container h3 sizes up the headline before the columns */
 
 .container h3{
     font-size: 50px;
     font-family: arial, bold;
 }
-.column-text{
-    
+
+/* The text within the pictures */
+
+.container{
+    width: 70%;
 }
-.row h3{
-    font-size: 30px;
+.row{
+    width: 100%:
 }
-.row p{
-    font-size: 20px;
-}
+
 .img-responsive{
-    width: 100%;
-    height: 30vh;
+  background-position: center;
+  background-size: cover;
+  width: 124vh;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+
 }
+#bball{
+    background-image: url(../storage/bilder/nike-basketball.jpg);
+
+}
+#team{
+    background-image: url(../storage/bilder/team-sport.jpg);
+
+}
+#trophy{
+    background-image: url(../storage/bilder/trophy.jpg);
+}
+.column-text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden; 
+  color: white;
+  background-color: rgba(0, 13, 56, 0.7);
+  height: 171px;
+}
+.column-text:hover{
+    transition-duration: 0.5s;
+    height: 100%;
+}
+
+.row h3{
+    margin-top: 50;
+    font-size: 2.08vh;
+} 
+.row p{
+    font-size: 1.39vh;
+}
+
+
 
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
