@@ -149,32 +149,40 @@ header{
 /* The text within the pictures */
 
 .container{
-    width: 70%;
+    width: 80%;
 }
+
+/* Row containing the columns, set to 100% of the containers width */
 .row{
     width: 100%:
 }
 
+/* Divs within the columns containing the pictures and the column-text */
 .img-responsive{
   background-position: center;
   background-size: cover;
   width: 124vh;
-  height: 50vh;
+  height: 70vh;
   position: relative;
   overflow: hidden;
-
+ 
 }
+/* Setting background picture for the first image*/
 #bball{
     background-image: url(../storage/bilder/nike-basketball.jpg);
-
 }
+
+/* Setting background picture for the second image*/
 #team{
     background-image: url(../storage/bilder/team-sport.jpg);
 
 }
+
+/* Setting background picture for the third image*/
 #trophy{
     background-image: url(../storage/bilder/trophy.jpg);
 }
+/* Setting the h3, p text on top of the picture, instead of underneath */
 .column-text{
   position: absolute;
   bottom: 0;
@@ -184,12 +192,14 @@ header{
   color: white;
   background-color: rgba(0, 13, 56, 0.7);
   height: 171px;
+  
 }
-.column-text:hover{
-    transition-duration: 0.5s;
-    height: 100%;
+/* Class to be added when hovering over the picture, increases the height of the column-text to display more information. Code in myJQ.js */
+.addon{
+    height: 60%;
+    transition-duration: 0.5;
 }
-
+/* The title in the picture */
 .row h3{
     margin-top: 50;
     font-size: 2.08vh;

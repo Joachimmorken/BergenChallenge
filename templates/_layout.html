@@ -16,12 +16,21 @@
 	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
 	<link rel="home" href="{{ siteUrl }}" />
 
+    <!-- Importing jQuery -->
+    <script language="JavaScript" type="text/javascript" src="../scrips/jquery-3.2.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../scrips/jquery-3.2.1.js"></script>
+    <script language="JavaScript" type="text/javascript" src="../scrips/myJQ.js"></script>
     
+    <!-- Importing online stylesheets -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	{% includeCssFile "/styles.css" %}
+    <!-- Importing local stylesheet -->
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	{% includeCssFile "/styles.css" %}
+    
+    
+    
 
 
 </head>
@@ -31,7 +40,7 @@
 <body>
     
 <!--
-    
+    See style.css for further commenting on the navbar
 -->
 
 <nav class="navbar navbar-default">
@@ -63,7 +72,11 @@
 </header>
 
 <!--
+    
     Container containing the pictures and text beneath the header.
+
+    col-sm-4 says that a small column is to take up 4/12 "grid-squares" of the row.
+
     class "column-text" to change the color of the text
     class "container h3/p" to change the size of the text
     class "img-responsive" to change the style of the picturwe
@@ -72,6 +85,9 @@
 	<h3>AKTUELT</h3><br>
 	<div class="row">
 		<div class="col-sm-4">
+            <!--
+                Assigned id's: bball, team and trophy, to apply different background images in style.css
+            -->
 			<div id="bball" class="img-responsive">
             <div class="column-text">
                 <h3>SPORT FOR ALLE</h3>
@@ -109,6 +125,8 @@
 
 	</div>
 </div><br>
+    
+
 
 <footer class="container-fluid text-center">
 	<p>Footer Text</p>
