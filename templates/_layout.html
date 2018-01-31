@@ -65,8 +65,9 @@
 		</div>
 	</div>
 </nav>
-<header>
+    
 
+<header>
         <div id="bakgrunn"></div>
         <img id="logo" src="../storage/bilder/Bergen-challenge-vektorisert.svg" alt="logo" >
 </header>
@@ -79,58 +80,137 @@
 
     class "column-text" to change the color of the text
     class "container h3/p" to change the size of the text
-    class "img-responsive" to change the style of the picturwe
+    class "img-responsive" to change the style of the picture
+
+
+    !!!WARNING!!!WARNING!!!WARNING!!!WARNING!!!WARNING!!!WARNING!!!
+        If you change/add/remove any tags in "img-responsive", beware that the jQuery code migth not work, because it looks for child elements of "img-responsive" to execute the code on.
+    !!!WARNING!!!WARNING!!!WARNING!!!WARNING!!!WARNING!!!WARNING!!!
 --->
 <div class="container text-center">
 	<h3>AKTUELT</h3><br>
-	<div class="row">
-		<div class="col-sm-4">
-            <!--
-                Assigned id's: bball, team and trophy, to apply different background images in style.css
-            -->
-			<div id="bball" class="img-responsive">
-            <div class="column-text">
-                <h3>SPORT FOR ALLE</h3>
-			     <p>Bli med på det utrolige for alle og en hver</p>
+        <div class="row">
+            <div class="col-sm-4">
+                <!--
+                    Assigned id's: bball, team and trophy, to apply different background images in style.css
+                -->
+                <div id="bball" class="img-responsive">
+                    <div class="column-text">
+                        <h3>SPORT FOR ALLE</h3>
+                         <p>Bli med på det utrolige for alle og en hver</p>
+                        
+                        <div class="hidden-column-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, eu vim summo convenire, no porro dicam sententiae qui, nihil suavitate definiebas et qui. Essent intellegat disputationi est in, ea delectus assueverit nam. Cum te prima sonet oblique, alii indoctum abhorreant ex mei, ad veri utinam est. Cum albucius consectetuer ad, in duo odio tation veritus, an has viris maluisset necessitatibus.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="col-sm-4">
+                <div id="team" class="img-responsive">
+                    <div class="column-text">
+                        <h3>SPORT FOR ALLE</h3>
+                         <p>Bli med på det utrolige for alle og en hver</p>
+                        
+                        <div class="hidden-column-text">
+                            <p>
+                                Lorem ipsum dolor sit amet, eu vim summo convenire, no porro dicam sententiae qui, nihil suavitate definiebas et qui. Essent intellegat disputationi est in, ea delectus assueverit nam. Cum te prima sonet oblique, alii indoctum abhorreant ex mei, ad veri utinam est. Cum albucius consectetuer ad, in duo odio tation veritus, an has viris maluisset necessitatibus.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-		</div>
-		<div class="col-sm-4">
-			<div id="team" class="img-responsive">
-			<div class="column-text">
-                <h3>SPORT FOR ALLE</h3>
-			     <p>Bli med på det utrolige for alle og en hver</p>
+            <div class="col-sm-4">
+                <div id="trophy" class="img-responsive">
+                    <div class="column-text">
+                        <h3>MEDALJEVINNER 2017</h3>
+                         <p>Se oversikten over alle som vant medaljer i 2017</p>
+                        
+                        <div class="hidden-column-text">
+                            <ul>
+                                <li>Sogn Pløyelag</li>
+                                <li>Tore's traktorteam</li>
+                                <li>Bergen Bayers</li>
+                                <li>OverOslo IL</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
+    </div>
+
+<div class="container text-center">
+	<h3>SPONSORER</h3><br>
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="sponsors" src="../storage/bilder/DNB_roheline_logo.jpg" alt="DNB-logo">
             </div>
-		</div>
-		<div class="col-sm-4">
-			<div id="trophy" class="img-responsive">
-			<div class="column-text">
-                <h3>MEDALJEVINNER 2017</h3>
-			     <p>Se oversikten over alle som vant medaljer i 2017</p>
+            <div class="col-sm-6">
+                <img class="sponsors"
+                     src="../storage/bilder/NSI%20logo%20norsk.png"
+                     alt="NSI-logo">
             </div>
-            </div>
-		
-    
         </div>
-        
-        
+</div>
 
 
-		{% block content %}
-		<p>If you see me, you haven’t set your <code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> yet.</p>
-		<p>See Twig’s <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance">Template Inheritance</a> documentation for an explanation.</p>
-		{% endblock %}
+            {% block content %}
+            <p>If you see me, you haven’t set your <code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> yet.</p>
+            <p>See Twig’s <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance">Template Inheritance</a> documentation for an explanation.</p>
+            {% endblock %}
 
 
-	</div>
-</div><br>
+        </div>
+<br>
     
+
+<div id="insta">
+    https://api.instagram.com/oembed?url=http://instagr.am/p/fA9uwTtkSN/
+    </div>
 
 
 <footer class="container-fluid text-center">
-	<p>Footer Text</p>
+    <div id="footer1">
+	<div class="row">
+        <div class="footer-col">LOGO</div>
+        <div class="footer-col">
+            <ul class="footer-list">
+                 <li class="footer-top-elem"><a href="#">INFO</a></li>
+                 <li class="footer-elem"><a href="#">PRAKTISK INFO</a></li>
+                 <li class="footer-elem"><a href="#">HVEM ER VI</a></li>
+                 <li class="footer-elem"><a href="#">KONTAKT OSS</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <ul class="footer-list">
+                 <li class="footer-top-elem"><a href="#">IDRETTER</a></li>
+                 <li class="footer-elem"><a href="#">PROGRAM</a></li>
+                 <li class="footer-elem"><a href="#">TABELL</a></li>
+                 <li class="footer-elem"><a href="#">RESULTATER</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <ul class="footer-list">
+                 <li class="footer-top-elem"><a href="#">AKTUELT</a></li>
+                 <li class="footer-elem"><a href="#">NYHETER</a></li>
+                 <li class="footer-elem"><a href="#">UNDERHOLDNING</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">11111111</div>
+
+     
+    </div>
+    </div>
+    
+    <div id="footer2"></div>
+    
 </footer>
+
 
 </body>
 </html>

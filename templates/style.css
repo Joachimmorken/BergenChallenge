@@ -11,6 +11,7 @@ body{
 .navbar {
     margin-bottom: 0;
 	border-radius: 0;
+    border: none;
 
 }
 /* The logo in the top left corner of the header/navbar */
@@ -96,11 +97,8 @@ body{
     
 }
 
-		/* Add a gray background color and some padding to the footer */
-footer {
-			background-color: rgba(0, 13, 56, 0.7);
-			padding: 25px;
-}
+/* Add a gray background color and some padding to the footer */
+
 
 /*Controls the header. The navbar is not part of this code*/
 header{
@@ -122,9 +120,9 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100vh;
     z-index: 1;
     width: 100%;
@@ -165,6 +163,7 @@ header{
   height: 70vh;
   position: relative;
   overflow: hidden;
+  
  
 }
 /* Setting background picture for the first image*/
@@ -192,11 +191,24 @@ header{
   color: white;
   background-color: rgba(0, 13, 56, 0.7);
   height: 171px;
-  
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
+/* a Div to be shown when hovering over one of the images */
+.hidden-column-text{
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+
 /* Class to be added when hovering over the picture, increases the height of the column-text to display more information. Code in myJQ.js */
 .addon{
-    height: 60%;
+    height: 50%;
     transition-duration: 0.5;
 }
 /* The title in the picture */
@@ -206,6 +218,56 @@ header{
 } 
 .row p{
     font-size: 1.39vh;
+}
+
+.sponsors{
+    height: 147px;
+    width: auto
+}
+footer{
+    
+}
+#footer1 {
+    background-color: rgba(0, 13, 56, 0.95);
+    height: 363px;
+    width: 100%;
+
+}
+.footer-col{
+    width: 20%;
+    float: left;
+    text-align: center;
+    height: 50%;
+    margin-top: 5%;
+    display: inline-block;
+
+}
+.footer-list{
+    list-style: none;
+    text-align: left;  
+    display: inline-block;
+    font-size: 1.7vh;
+    line-height: 5vh;
+}
+.footer-list li:hover{
+}
+.footer-top-elem a{
+    text-decoration: none;
+    color: white;
+}
+.footer-elem a{
+    text-decoration: none;
+    color: white;
+}
+.footer-top-elem a:hover{
+    color:palegoldenrod;
+}
+.footer-elem a:hover{
+    color:palegoldenrod;
+}
+#footer2{
+    height: 100px;
+    color: grey;
 }
 
 
@@ -222,4 +284,6 @@ header{
         position: relative;
         right: 0;
     }
+
+
 }
