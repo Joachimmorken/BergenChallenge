@@ -1,38 +1,57 @@
 /* CSS for "idretter" */
 
-/* parent */
-.row { 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 15%;
-    padding-right: 15%;
+ 
+/* parent div */
+ .flex-container {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     padding-left: 5%;
+     padding-right: 5%;
+     justify-content: space-around;
+     align-content: space-between;
 }
 
-/* child */ 
-
-.col-sm-3 {  
-    width: 300px;
-    height: 300px;
-    margin: 1%; /* important, margin between columns */ 
-    
-      
-    color: #FFF;
-    background-color: hsla(195, 60%, 50%, 1);
+/* child div, styling for each box/sport */
+ .flex-item {
+     margin: 1%;
+     background: tomato;
+     width: 250px;
+     height: 250px;
+     line-height: 150px;
+     color: white;
+     font-weight: bold;
+     font-size: 3em;
+     text-align: center;
+     background-position: center;
+     background-size: cover;
 }
 
-@media screen and (min-width: 500px) {
-    .row {
-        display: flex;
-        flex-direction: row;
-        padding-left: 15%;
-        padding-right: 15%;
- }
+/* text styling on top of */
+ .flex-item h2 {
+     position: relative;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
 
-    img {
-        object-fit: contain;
-        p
-    }
+/* image-background for the individual sports */
+ #test {
+     background-image: url(../storage/bilder/trophy.jpg);
+}
+
+#test2 {
+    background-image: url(../storage/bilder/trophy.jpg)
+}
+
+
+/* general image styling */
+ .img-sport {
+     background-position: center;
+     background-size: cover;
+     
+}
+ 
     
     
     
