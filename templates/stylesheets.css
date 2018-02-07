@@ -1,5 +1,3 @@
-/* CSS for "idretter" */
-
  
 /* parent div */
  .flex-container {
@@ -27,6 +25,28 @@
      background-size: cover;
 }
 
+
+
+.overlay {
+  display: table;
+  width: 100%;
+  height: 100%;
+    
+    
+}
+
+.overlay:hover {
+    background-color: rgba(0, 176, 192, 0.7);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    
+}
+
+
+
 /* text styling on top of */
  .flex-item h2 {
      position: relative;
@@ -37,33 +57,18 @@
 
 /* image-background for the individual sports */
  #test {
-     background-image: url(../storage/bilder/trophy.jpg);
+     background-image: url(Bilder/344x344-insta.png);
+     
 }
 
 #test2 {
-    background-image: url(../storage/bilder/trophy.jpg)
+    background-image: url(Bilder/trophy.jpg)
 }
 
 
 /* general image styling */
  .img-sport {
      background-position: center;
-     background-size: cover;
-     
+     background-size: cover;    
 }
  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
