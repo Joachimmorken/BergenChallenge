@@ -6,6 +6,7 @@
     -webkit-background-size: cover;
     background-size: cover;
     min-height: 250px;
+    margin-bottom: 0px !important;
 }
 
 #overhead   {
@@ -18,3 +19,18 @@
     font-size: 80px;
     
 }
+
+.col-sm-8 {
+    min-height: 500px;
+    float: none;
+    margin: 0 auto;
+    height: 700px;
+}
+
+.list-group {
+    padding-top: 20px;
+}
+
+.list-group-item {
+    font-size: 20px;
+  
