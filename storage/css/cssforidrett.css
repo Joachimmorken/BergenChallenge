@@ -21,16 +21,75 @@
 }
 
 .col-sm-8 {
-    min-height: 500px;
     float: none;
     margin: 0 auto;
-    height: 700px;
+    height: 50%;
 }
 
-.list-group {
-    padding-top: 20px;
+.list {
+    list-style: none;
+    padding-left:0;
+    border-bottom: 1px solid;
+    border-color: #000D38;
+    margin: 0 auto;
+    width: 80%;
 }
 
-.list-group-item {
+.list-item {
     font-size: 20px;
-  
+    border-top: 1px solid;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border-color: #000D38;
+}
+
+/* text about the sport */
+.infotext {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+/* "questions" for where, when etc.. */
+.question {
+    font-weight: bold;
+    color: #000D38;
+}
+
+/* answers for where, when etc.. */
+.answers {
+    float: right;
+    color: #000D38;
+}
+
+#mainNav {
+    background-color: #000D38 !important;
+}
+
+/* BC-farger */
+
+#bc {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #000D38;
+}
+
+
