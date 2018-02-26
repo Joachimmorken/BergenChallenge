@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/countdown.css">
+
+          <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+	<script type="text/javascript" src="js/kinetic.js"></script>
+
+	<script type="text/javascript" src="js/jquery.final-countdown.js"></script>
+          
+    </head>
+    
+    <body>
+<!--
+    <script type="text/javascript">
+
+$('document').ready(function() {
+
+'use strict';
+
+var start = Date.parse('Wed Feb 10 19:20:44 +0000 2018')/1000;
+
+var end = Date.parse('Wed Jun 20 19:20:44 +0000 2018')/1000;
+
+var now = new Date().getTime() / 1000;
+
+$('.countdown').final_countdown({
+
+'start': start,
+
+'end': end,
+
+'now': now
+
+});
+
+});
+
+</script>
+-->
+        <!--
+        
+        <script type="text/javascript">
+$('.countdown').final_countdown({
+start: '1362139200',
+end: '1531582887',
+now: '1387461319'
+});
+</script>
+        -->
+        
+        <script type="text/javascript">
+
+        
+        $(document).ready(function() {
+$('.countdown').final_countdown({
+start: '1518624383',
+end: '1531582887',
+now: '1518624383',
+selectors: {
+    value_seconds: '.clock-seconds .val',
+    canvas_seconds: 'canvas_seconds',
+    value_minutes: '.clock-minutes .val',
+    canvas_minutes: 'canvas_minutes',
+    value_hours: '.clock-hours .val',
+    canvas_hours: 'canvas_hours',
+    value_days: '.clock-days .val',
+    canvas_days: 'canvas_days'
+},
+seconds: {
+    borderColor: '#7995D5',
+    borderWidth: '6'
+},
+minutes: {
+    borderColor: '#ACC742',
+    borderWidth: '6'
+},
+hours: {
+    borderColor: '#ECEFCB',
+    borderWidth: '6'
+},
+days: {
+    borderColor: '#FF9900',
+    borderWidth: '6'
+}}, function() {
+// Finish callback
+});
+});
+        
+        </script>
+        
+        <div class="countdown-container container">
+<div class="clock row">
+
+
+<!-- days --> 
+<div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3">
+<div class="wrap">
+<div class="inner">
+<div id="canvas_days" class="clock-canvas"></div>
+<div class="text">
+<p class="val">0</p>
+<p class="type-days type-time">DAYS</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- hours --> 
+
+<div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3">
+<div class="wrap">
+<div class="inner">
+<div id="canvas_hours" class="clock-canvas"></div>
+<div class="text">
+<p class="val">0</p>
+<p class="type-hours type-time">HOURS</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- minutes --> 
+<div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3">
+<div class="wrap">
+<div class="inner">
+<div id="canvas_minutes" class="clock-canvas"></div>
+<div class="text">
+<p class="val">0</p>
+<p class="type-minutes type-time">MINUTES</p>
+</div>
+</div>
+</div>
+</div>
+
+<!-- seconds --> 
+<div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+<div class="wrap">
+<div class="inner">
+<div id="canvas_seconds" class="clock-canvas"></div>
+<div class="text">
+<p class="val">0</p>
+<p class="type-seconds type-time">SECONDS</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+        
+            
+        
+    </body>
+
+
+</html>
