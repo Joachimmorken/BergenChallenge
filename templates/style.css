@@ -16,7 +16,7 @@ body{
 }
 /* The logo in the top left corner of the header/navbar */
 .navbar-brand{
-    font-size: 20px;
+    font-size: 2vh;
     
 }
 
@@ -182,6 +182,25 @@ header{
     background-image: url(../storage/bilder/trophy.jpg);
 }
 /* Setting the h3, p text on top of the picture, instead of underneath */
+.colorlayer{
+  background-color: rgba(0, 13, 56, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden; 
+  color: white;
+  height: 173px;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.colorlayer2{
+    height: 100%;
+    background-color: rgba(0,176,192,0.7);
+}
 .column-text{
   position: absolute;
   bottom: 0;
@@ -189,36 +208,44 @@ header{
   width: 100%;
   overflow: hidden; 
   color: white;
-  background-color: rgba(0, 13, 56, 0.7);
-  height: 171px;
-  -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-/* a Div to be shown when hovering over one of the images */
-.hidden-column-text{
-    display: none;
-    width: 80%;
-    margin: 0 auto;
+  height: 80%;
     
 }
+.column-text p{
+    font-size: 1.7vh;
+}
+.hidden-column-text{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden; 
+  color: white;
+  height: 100%;
+  
+}
+.hidden-column-text h3{
+    margin-top: 50%;
+}
+.hidden-column-text img{
+    height: 10vh;
+    margin-top: 2vh;
+}
+.hidden-column-underlead{
+    margin-top: 2vh;
+    font-size: 2vh;
+}
+/* a Div to be shown when hovering over one of the images */
 
 
 /* Class to be added when hovering over the picture, increases the height of the column-text to display more information. Code in myJQ.js */
-.addon{
-    height: 50%;
-    transition-duration: 0.5;
-}
 /* The title in the picture */
 .row h3{
-    margin-top: 50;
-    font-size: 2.08vh;
+
+    font-size: 2.3vh;
 } 
-.row p{
-    font-size: 1.39vh;
-}
+
 
 .sponsors{
     height: 147px;
@@ -272,7 +299,7 @@ footer{
 
 
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #777;
     }
@@ -284,6 +311,12 @@ footer{
         position: relative;
         right: 0;
     }
+    .col-sm-4{
+        margin-top: 5vh;
+    }
+    .hidden-column-text h3{
+    margin-top: 30%;
+}
 
 
 }
