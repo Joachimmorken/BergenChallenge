@@ -4,18 +4,16 @@
      display: flex;
      flex-direction: row;
      flex-wrap: wrap;
-     padding-left: 5%;
-     padding-right: 5%;
-     justify-content: space-around;
-     align-content: space-between;
+     width: 100%;
+     justify-content: center;
+     padding-top: 30px;
 }
 
 /* child div, styling for each box/sport */
  .flex-item {
-     margin: 1%;
-     background: tomato;
-     width: 250px;
-     height: 250px;
+     background: white;
+     width: 412px;
+     height: 412px;
      line-height: 150px;
      color: white;
      font-weight: bold;
@@ -23,16 +21,19 @@
      text-align: center;
      background-position: center;
      background-size: cover;
+     margin: 0.85%; 
+     display: flex;
 }
 
 
 
 .overlay {
-  display: table;
-  width: 100%;
-  height: 100%;
-    
-    
+    display: table;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .overlay:hover {
@@ -46,29 +47,12 @@
 }
 
 
-
 /* text styling on top of */
  .flex-item h2 {
-     position: relative;
-     top: 40%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-}
-
-/* image-background for the individual sports */
- #test {
-     background-image: url(../storage/bilder/bakgrunn.jpg);
-     
-}
-
-#test2 {
-    background-image: url(Bilder/trophy.jpg)
+   font-family: Arial;
+     font-weight: bold;
+     font-size: 45px;
 }
 
 
-/* general image styling */
- .img-sport {
-     background-position: center;
-     background-size: cover;    
-}
  
