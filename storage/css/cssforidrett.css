@@ -32,7 +32,7 @@
     border-bottom: 1px solid;
     border-color: #000D38;
     margin: 0 auto;
-    width: 80%;
+    width: 925px;
 }
 
 .list-item {
@@ -46,7 +46,7 @@
 
 /* text about the sport */
 .infotext {
-    width: 80%;
+    width: 925px;
     margin: 0 auto;
     padding-top: 40px;
     padding-bottom: 80px;
