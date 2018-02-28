@@ -116,7 +116,7 @@ header{
 /*The background image of the header*/
 #bakgrunn{
     overflow: auto;
-    background-image: url(../storage/bilder/bakgrunn.jpg);
+    background-image: url(../bilder/bakgrunn.jpg);
     background-position: center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
@@ -177,18 +177,18 @@ header{
 }
 /* Setting background picture for the first image*/
 #bball{
-    background-image: url(../storage/bilder/nike-basketball.jpg);
+    background-image: url(../bilder/nike-basketball.jpg);
 }
 
 /* Setting background picture for the second image*/
 #team{
-    background-image: url(../storage/bilder/team-sport.jpg);
+    background-image: url(../bilder/team-sport.jpg);
 
 }
 
 /* Setting background picture for the third image*/
 #trophy{
-    background-image: url(../storage/bilder/trophy.jpg);
+    background-image: url(../bilder/trophy.jpg);
 }
 /* Setting the h3, p text on top of the picture, instead of underneath */
 .colorlayer{
@@ -235,7 +235,7 @@ header{
   
 }
 .hidden-column-text h3{
-    margin-top: 50%;
+    margin-top: 35%;
 }
 .hidden-column-text img{
     height: 10vh;
