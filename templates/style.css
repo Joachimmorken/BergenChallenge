@@ -40,7 +40,7 @@ body{
 /* Link */
 .navbar-default .navbar-nav > li > a {
     color: white;
-    margin-left: 40;
+    margin-left: 20;
 
 }
 .navbar-default .navbar-nav > li > a:hover,
@@ -84,17 +84,19 @@ body{
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-   
+   background-color: rgba(0,176,192,0.7);
+
 }
 .navbar-default .navbar-toggle .icon-bar {
-   
+   background-color: white;
 }
-/* The list on the right containing list elements such as: hjem, info, idretter etc.*/
 .collapse{
-    right: 40;
     position: absolute;
-    
+    right: 10;
 }
+
+/* The list on the right containing list elements such as: hjem, info, idretter etc.*/
+
 
 /* Add a gray background color and some padding to the footer */
 
@@ -300,7 +302,7 @@ footer{
 
 
 
-@media (min-width: 1000px) {
+@media (max-width: 1000px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #777;
     }
@@ -310,7 +312,6 @@ footer{
     }
     .collapse{
         position: relative;
-        right: 0;
     }
     .col-sm-4{
         margin-top: 5vh;
