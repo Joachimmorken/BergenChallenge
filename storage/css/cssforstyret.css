@@ -1,0 +1,117 @@
+
+.jumbotron {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    min-height: 250px;
+    margin-bottom: 0px !important;
+}
+ 
+/* parent div */
+ .flex-container {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     padding-left: 5%;
+     padding-right: 5%;
+     justify-content: center;
+     align-content: space-between;
+}
+
+/* child div, styling for each box/sport */
+ .flex-item {
+     background: tomato;
+     width: 200px;
+     height: 230px;
+     line-height: 150px;
+     text-align: center;
+     background-position: center;
+     background-size: cover;
+     border: 2px solid;
+     border-color: #000D38;
+}
+
+.flex-item-text {
+     background: white;
+     width: 200px;
+     height: 80px;
+     background-position: center;
+     background-size: cover;
+    margin-top: 150px;
+    font-family: Arial;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+p {
+    margin: 0 !important;
+}
+
+.col-sm-8 {
+    float: none;
+    margin: 0 auto;
+    height: 50%;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* info about the members */
+
+.name {
+    font-weight: bold;
+    color: #000D38;
+}
+
+.role {
+    font-size: 12px;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+.tlf {
+    font-size: 12px;
+}
+
+.epost {
+    font-size: 12px;
+}
+
+
+
+#mainNav {
+    background-color: #000D38 !important;
+}
+
+/* BC-farger */
+
+#bc {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.lol {
+    background: black;
+    height: 50%;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #000D38;
+}
+
+
