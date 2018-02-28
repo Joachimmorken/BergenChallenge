@@ -19,6 +19,7 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
 	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
 	<link rel="home" href="{{ siteUrl }}" />
 
@@ -57,15 +58,19 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">SL BC 2018</a>
+			<a class="navbar-brand" href="#">
+                <img id="logo-header" src="../storage/bilder/litenlogo.png" alt="logo"></a>
+                
+            <a class="navbar-brand"> SL BC 2018</a>
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav">
 				<li><a href="_layout.html">HJEM</a></li>
 				<li><a href="#">INFO</a></li>
 				<li><a href="#">IDRETTER</a></li>
-				<li><a href="#">AKTUELT</a></li>
-                <li><a href="#">NORSK//ENGELSK</a></li>
+				<li><a href="#">NYHETER</a></li>
+                <li><a href="#">UNDERHOLDNING</a></li>
+                <li><a href="#">SAMARBEID</a></li>
 			</ul>
 			
 		</div>
@@ -75,7 +80,7 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
 
 <header>
         <div id="bakgrunn"></div>
-        <img id="logo" src="../storage/bilder/Bergen-challenge-vektorisert.svg" alt="logo" >
+        <img id="logo" src="../storage/bilder/SL%20BC%20ny%20logo.png" alt="logo" >
 </header>
 
 <!--
@@ -166,8 +171,9 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
             </div>
     </div>
 
+
 <div class="container text-center">
-	<h3>SPONSORER</h3><br>
+	<h3>SAMARBEID</h3><br>
         <div class="row">
             <div class="col-sm-6">
                 <img class="sponsors" src="../storage/bilder/DNB_roheline_logo.jpg" alt="DNB-logo">
@@ -197,7 +203,6 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
 
 
 <footer class="container-fluid text-center">
-    <div id="footer1">
 	<div class="row">
         <div class="footer-col">LOGO</div>
         <div class="footer-col">
@@ -227,11 +232,15 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
 
      
     </div>
-    </div>
-    
-    <div id="footer2"></div>
+
     
 </footer>
+<footer id="footer2" class="container-fluid text-cente">
+
+
+
+</footer>
+
 
 
 </body>
