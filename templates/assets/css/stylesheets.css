@@ -12,8 +12,8 @@
 /* child div, styling for each box/sport */
  .flex-item {
      background: white;
-     width: 412px;
-     height: 412px;
+     width: 350px;
+     height: 350px;
      line-height: 150px;
      color: white;
      font-weight: bold;
