@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    
+   
 /*
 * function that adds class addon to the child of .img-responsive,  which is column-text when hovering over .img-responsive(the image)
 
@@ -15,7 +17,11 @@ It also looks for the class "hidden-column-text", by html-tree. Therefore reffer
        $(this.children[0]).removeClass("colorlayer2");
     }
 );
-    
+
+
+
+
+
  
     
 });

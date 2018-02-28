@@ -27,6 +27,7 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
     <script language="JavaScript" type="text/javascript" src="assets/scrips/jquery-3.2.1.min.js"></script>
     <script language="JavaScript" type="text/javascript" src="assets/scrips/jquery-3.2.1.js"></script>
     <script language="JavaScript" type="text/javascript" src="assets/scrips/myJQ.js"></script>
+     
     
     <!-- Importing online stylesheets -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -67,7 +68,7 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
 			<ul class="nav navbar-nav">
 				<li><a href="_layout.html">HJEM</a></li>
 				<li><a href="#">INFO</a></li>
-				<li><a href="#">IDRETTER</a></li>
+				<li><a href="idretter.html">IDRETTER</a></li>
 				<li><a href="#">NYHETER</a></li>
                 <li><a href="#">UNDERHOLDNING</a></li>
                 <li><a href="#">SAMARBEID</a></li>
@@ -81,6 +82,13 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
 <header>
         <div id="bakgrunn"></div>
         <img id="logo" src="assets/bilder/SL%20BC%20ny%20logo.png" alt="logo" >
+    
+    <div class="example-blocks">
+  New year's eve in
+  <div id="clock"></div>
+</div>
+
+
 </header>
 
 <!--
@@ -187,61 +195,30 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
 </div>
 
 
+<div class="container">
+    <div class="instagram-section">
+        <h3>INSTAGRAM</h3>
+        <div id="instafeed" class="row"></div>
+     </div>
+</div>
+
             {% block content %}
             <p>If you see me, you haven’t set your <code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> yet.</p>
             <p>See Twig’s <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance">Template Inheritance</a> documentation for an explanation.</p>
             {% endblock %}
 
-
+        
         </div>
 <br>
     
 
-<div id="insta">
-    https://api.instagram.com/oembed?url=http://instagr.am/p/fA9uwTtkSN/
-    </div>
-
-
-<footer class="container-fluid text-center">
-	<div class="row">
-        <div class="footer-col">LOGO</div>
-        <div class="footer-col">
-            <ul class="footer-list">
-                 <li class="footer-top-elem"><a href="#">INFO</a></li>
-                 <li class="footer-elem"><a href="#">PRAKTISK INFO</a></li>
-                 <li class="footer-elem"><a href="#">HVEM ER VI</a></li>
-                 <li class="footer-elem"><a href="#">KONTAKT OSS</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <ul class="footer-list">
-                 <li class="footer-top-elem"><a href="#">IDRETTER</a></li>
-                 <li class="footer-elem"><a href="#">PROGRAM</a></li>
-                 <li class="footer-elem"><a href="#">TABELL</a></li>
-                 <li class="footer-elem"><a href="#">RESULTATER</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <ul class="footer-list">
-                 <li class="footer-top-elem"><a href="#">AKTUELT</a></li>
-                 <li class="footer-elem"><a href="#">NYHETER</a></li>
-                 <li class="footer-elem"><a href="#">UNDERHOLDNING</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">11111111</div>
-
-     
-    </div>
-
-    
-</footer>
-<footer id="footer2" class="container-fluid text-cente">
 
 
 
-</footer>
 
-
+ 
+<script  src="assets/scrips/instafeed.min.js"></script>
+<script src="assets/scrips/custom.js"></script>
 
 </body>
 </html>
