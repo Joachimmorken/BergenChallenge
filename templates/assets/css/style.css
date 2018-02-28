@@ -92,7 +92,7 @@ body{
 }
 .collapse{
     position: absolute;
-    right: 10;
+    right:10;
 }
 
 /* The list on the right containing list elements such as: hjem, info, idretter etc.*/
@@ -157,7 +157,7 @@ header{
 /* The text within the pictures */
 
 .container{
-    width: 80%;
+    width: 95%;
 }
 
 /* Row containing the columns, set to 100% of the containers width */
@@ -263,42 +263,26 @@ header{
     width: auto;
 
 }
-footer{
-    background-color: rgba(0, 13, 56, 0.95);
-    height: 30vh;
-}
-.footer-col{
-    width: 20%;
-    float: left;
-    text-align: center;
-    height: 50%;
-    margin-top: 5%;
-    display: inline-block;
 
+footer{
+    background-color: blue;
+    width: 100%;
 }
-.footer-list{
-    list-style: none;
-    text-align: left;  
-    display: inline-block;
-    font-size: 1.7vh;
-    line-height: 5vh;
+.instagram-section{
+    background-color: grey;
+    width: 100%;
 }
-.footer-list li:hover{
+.instaimg img:hover{
+    opacity: 0.7;
 }
-.footer-top-elem a{
-    text-decoration: none;
-    color: white;
+.instaimg img{
+  height: 30vh;
 }
-.footer-elem a{
-    text-decoration: none;
-    color: white;
+.instaimg{
+    max-width: 30vh;
+    margin: 20;
 }
-.footer-top-elem a:hover{
-    color:palegoldenrod;
-}
-.footer-elem a:hover{
-    color:palegoldenrod;
-}
+
 
 
 
