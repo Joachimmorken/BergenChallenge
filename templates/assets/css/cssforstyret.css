@@ -5,28 +5,31 @@
      flex-direction: row;
      flex-wrap: wrap;
      width: 100%;
-     justify-content: center;
+     padding-left: 3%;
+     padding-right: 3%;
 }
 
 /* child div, styling for each box/sport */
- .flex-item {
-     background: white;
-     width: 350px;
-     height: 350px;
-     line-height: 150px;
-     color: white;
-     font-weight: bold;
-     font-size: 3em;
-     text-align: center;
-     background-position: center;
-     background-size: cover;
-     margin: 0.85%; 
+ .flex-item {  
+     width: 460px;
+     height: 230px;
      display: flex;
+     margin-bottom: 70px;
 }
 
 .flex-item-portrait {
     width: 50%;
-    background: green;
+    background-position: center top;
+    background-size: cover;
+    border: 2px solid #000D38;
+}
+
+.flex-item-info {
+    width: 50%;
+    height: 100px;
+    margin-top: 140px;
+    padding-left: 15px;
+    
 }
 
 .jumbotron {
@@ -46,8 +49,8 @@
 /* BC-farger */
 
 #bc {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 70px;
 }
 
 #heading {
@@ -55,14 +58,46 @@
     color: #000D38;
     text-align: center;
     vertical-align: middle;
+    font-size: 50px;
 }
 
+#name {
+    color: #000D38;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
 
+#position {
+    color: #000D38;
+    font-family: Arial;
+    font-style: italic;
+    font-size: 12px;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+#tlf {
+    color: #000D38;
+    font-family: Arial;
+    font-size: 12px;
+    margin: 0;
+}
+
+#epost {
+    color: #000D38;
+    font-family: Arial;
+    font-size: 12px;
+    margin: 0;
+}
 
 .col-sm-8 {
-   background: blue;
     margin: 0 auto;
+    padding-top: 40px;
 }
+
+
 
 
 /* Sticky footer styles
