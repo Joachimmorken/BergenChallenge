@@ -18,10 +18,5 @@ It also looks for the class "hidden-column-text", by html-tree. Therefore reffer
     }
 );
 
-
-
-
-
- 
     
 });

@@ -30,11 +30,14 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
      
     
     <!-- Importing online stylesheets -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Importing local stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/headfoot.css">
 	{% includeCssFile "/styles.css" %}
     
     
@@ -51,6 +54,8 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
     See style.css for further commenting on the navbar
 -->
 
+    
+<!--The CSS for the navbar underneath is in headfoot.css-->
 <nav class="navbar navbar-default">
 	<div class="container-fluid">
 		<div class="navbar-header">
@@ -77,16 +82,11 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
 		</div>
 	</div>
 </nav>
-    
+<!--The CSS for the above is in headfoot.css-->  
 
 <header>
         <div id="bakgrunn"></div>
         <img id="logo" src="assets/bilder/SL%20BC%20ny%20logo.png" alt="logo" >
-    
-    <div class="example-blocks">
-  New year's eve in
-  <div id="clock"></div>
-</div>
 
 
 </header>
@@ -106,7 +106,10 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
         If you change/add/remove any tags in "img-responsive", beware that the jQuery code migth not work, because it looks for child elements of "img-responsive" to execute the code on.
     !!!WARNING!!!WARNING!!!WARNING!!!WARNING!!!WARNING!!!WARNING!!!
 --->
+    
+
 <div class="container text-center">
+<div id="img-section">
 	<h3>AKTUELT</h3><br>
         <div class="row">
             <div class="col-sm-4">
@@ -178,29 +181,40 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
              </div>
             </div>
     </div>
-
-
-<div class="container text-center">
-	<h3>SAMARBEID</h3><br>
-        <div class="row">
-            <div class="col-sm-6">
-                <img class="sponsors" src="assets/bilder/DNB_roheline_logo.jpg" alt="DNB-logo">
-            </div>
-            <div class="col-sm-6">
-                <img class="sponsors"
-                     src="assets/bilder/NSI%20logo%20norsk.png"
-                     alt="NSI-logo">
-            </div>
-        </div>
-</div>
-
-
-<div class="container">
+    </div>
+    </div>  
+<div id="instasection">
+    <div class="container text-center">
     <div class="instagram-section">
         <h3>INSTAGRAM</h3>
         <div id="instafeed" class="row"></div>
      </div>
 </div>
+</div>
+    
+<div class="container text-center">
+<div id="sponsor-section">    
+<div class="container text-center">
+	<h3>SAMARBEID</h3><br>
+        <div class="row">
+            <div class="sp">
+            <div class="sponsorlogo">
+                <div class="fitsponsor">
+                <img class="sponsors" src="assets/bilder/DNB_roheline_logo.jpg" alt="DNB-logo">
+                </div>
+                
+                <div class="fitsponsor">
+                <img class="sponsors"
+                     src="assets/bilder/NSI%20logo%20norsk.png"
+                     alt="NSI-logo">
+                </div>
+            </div>
+        </div>
+            </div>
+</div>
+ </div> 
+ </div>
+
 
             {% block content %}
             <p>If you see me, you haven’t set your <code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> yet.</p>
@@ -208,17 +222,64 @@ Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licen
             {% endblock %}
 
         
-        </div>
+       
 <br>
-    
-
+    <!--The CSS for the footer is in the headfoot.css file-->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2 class="logo"><a href="#"><img id="footerlogo" src="assets/bilder/litenlogo.png"> </a></h2>
+                </div>
+                <div class="col-sm-2">
+                    <h5>INFO</h5>
+                    <ul>
+                        <li><a href="#">Praktisks info</a></li>
+                        <li><a href="#">Hvem er vi</a></li>
+                        <li><a href="#">Kontakt oss</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Idretter</h5>
+                    <ul>
+                        <li><a href="#">Program</a></li>
+                        <li><a href="#">Tabell</a></li>
+                        <li><a href="#">Resultater</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Akutelt</h5>
+                    <ul>
+                        <li><a href="#">Nyheter</a></li>
+                        <li><a href="#">Underholdning</a>
+                        </li>
+                        <li><a href="#">Samarbeid</a>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default">Følg oss</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© SL Bergen Challenge 2018 </p>
+        </div>
+    </footer>
 
 
 
 
  
-<script  src="assets/scrips/instafeed.min.js"></script>
-<script src="assets/scrips/custom.js"></script>
+<script language="JavaScript" type="text/javascript" src="assets/scrips/instafeed.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="assets/scrips/custom.js"></script>
+<script language="JavaScript" type="text/javascript" src="assets/scrips/progressbar.js"></script>
+<script language="JavaScript" type="text/javascript" src="assets/scrips/require.js"></script>
+
 
 </body>
 </html>
