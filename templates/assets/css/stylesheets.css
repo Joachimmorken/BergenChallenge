@@ -5,15 +5,15 @@
      flex-direction: row;
      flex-wrap: wrap;
      width: 100%;
-     justify-content: space-between;
+     justify-content: center;
      padding-top: 30px;
 }
 
 /* child div, styling for each box/sport */
  .flex-item {
      background: white;
-     width: 300px;
-     height: 300px;
+     width: 350px;
+     height: 350px;
      line-height: 150px;
      color: white;
      font-weight: bold;
