@@ -5,15 +5,15 @@
      flex-direction: row;
      flex-wrap: wrap;
      width: 100%;
-     justify-content: center;
+     justify-content: space-between;
      padding-top: 30px;
 }
 
 /* child div, styling for each box/sport */
  .flex-item {
      background: white;
-     width: 350px;
-     height: 350px;
+     width: 300px;
+     height: 300px;
      line-height: 150px;
      color: white;
      font-weight: bold;
@@ -37,7 +37,7 @@
 }
 
 .overlay:hover {
-    background-color: rgba(0, 176, 192, 0.7);
+    background-color: rgba(0, 176, 192, 0.7); 
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
