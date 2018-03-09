@@ -1,0 +1,658 @@
+
+
+.navbar {
+    margin-bottom: 0;
+	border-radius: 0;
+    border: none;
+
+
+}
+/* The logo in the top left corner of the header/navbar */
+
+
+/* The whole navbar */
+.navbar-default {
+  background: rgba(0, 13, 56, 0.5);
+   box-shadow: 0px 5px 20px black;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  font-size: 16px;
+ font-weight: 00;
+    text-shadow: 0px 0px 10px black;
+  
+}
+
+/* Title */
+.navbar-default .navbar-brand {
+    color: white;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: white;
+}
+/* Link */
+
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    margin-left: 5px;
+
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #00B0C0;
+    border-bottom: 1.5px solid #00B0C0;
+    padding-bottom: 0 0 4px;
+}
+.navbar-default .navbar-nav > li > a:active{
+   
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #00B0C0;
+
+
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+ 
+}
+/* Caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+ 
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+
+}
+/* Mobile version */
+.navbar-default .navbar-toggle {
+
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+   background-color: rgba(0,176,192,0.7);
+
+}
+.navbar-default .navbar-toggle .icon-bar {
+   background-color: white;
+}
+
+.collapse{
+    position: absolute;
+    right:10px;
+}
+
+
+#myFooter {
+    background-color: rgb(0, 13, 56);
+    color: white;
+    padding-top: 30px;
+    letter-spacing: 2;
+    text-transform: uppercase;
+    font-size: 12;
+}
+
+#myFooter .footer-copyright {
+    background-color: #EBEBEB;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .row {
+    margin-bottom: 60px;
+}
+
+#myFooter .navbar-brand {
+    margin-top: 45px;
+    height: 65px;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: rgb(0, 13, 56);
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 50;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    padding-left: 50;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter h2 a{
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: rgb(0,176,192);
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 16px;
+}
+
+#myFooter .social-networks a {
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover {
+    text-decoration: none;
+}
+
+#myFooter .facebook:hover {
+    color: #0077e2;
+}
+
+#myFooter .google:hover {
+    color: #ef1a1a;
+}
+
+#myFooter .twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .btn {
+    color: white;
+    background-color: rgb(0,176,192);
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+#footerlogo{
+    height: 10vh;
+}
+/* Setting basic requirements for the whole document */
+body{
+     margin:0px;
+     padding:0px;
+     min-width:100%;
+     max-width:100%;
+     height:auto;
+     font-family: 'Arial Bold', sans-serif;
+}
+
+
+/* The list on the right containing list elements such as: hjem, info, idretter etc.*/
+
+
+/* Add a gray background color and some padding to the footer */
+
+
+/*Controls the header. The navbar is not part of this code*/
+header{
+    overflow: auto;
+    height: 100vh;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+/*The background image of the header*/
+#bakgrunn{
+    overflow: auto;
+    background-image: url(../bilder/ol.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    z-index: 1;
+    width: 100%;
+   
+
+}
+
+/* Centering the logo on top of the background image */
+#logo{
+    position: absolute;
+    width: 30vh;
+    z-index: 11;
+  
+}
+#logo-header{
+    margin-top: -5;
+    width: 3.5vh;
+}
+.navbar-brand{
+    font-size: 2vh;
+    margin-top: 1;
+    margin-right: -10;  
+}
+/* Container h3 sizes up the headline before the columns */
+
+.container h3{
+    font-size: 50px;
+    font-family: arial, bold;
+    margin-top: 5vh;
+}
+
+/* The text within the pictures */
+
+.container{
+    width: 95%;
+}
+
+/* Row containing the columns, set to 100% of the containers width */
+.row{
+    width: 100%:
+}
+
+/* Divs within the columns containing the pictures and the column-text */
+.img-responsive{
+  background-position: center;
+  background-size: cover;
+  height:80vh;
+  position: relative;
+  overflow: hidden;
+    
+
+  
+ 
+}
+/* Setting background picture for the first image*/
+#bball{
+    background-image: url(../bilder/nike-basketball.jpg);
+}
+
+/* Setting background picture for the second image*/
+#team{
+    background-image: url(../bilder/team-sport.jpg);
+
+}
+
+/* Setting background picture for the third image*/
+#trophy{
+    background-image: url(../bilder/trophy.jpg);
+}
+/* Setting the h3, p text on top of the picture, instead of underneath */
+.colorlayer{
+  background-color: rgba(0, 13, 56, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden; 
+  color: white;
+  height: 150px;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.colorlayer2{
+    height: 100%;
+    background-color: rgba(0,176,192,0.7);
+}
+.column-text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden; 
+  color: white;
+  height: 90%;
+    
+}
+.column-text p{
+    font-size: 1.7vh;
+}
+.hidden-column-text{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden; 
+  color: white;
+  height: 100%;
+  
+}
+.hidden-column-text h3{
+    margin-top: 50%;
+}
+.hidden-column-text img{
+    height: 10vh;
+    margin-top: 2vh;
+}
+.hidden-column-underlead{
+    margin-top: 2vh;
+    font-size: 2vh;
+}
+
+
+/* a Div to be shown when hovering over one of the images */
+
+
+/* Class to be added when hovering over the picture, increases the height of the column-text to display more information. Code in myJQ.js */
+/* The title in the picture */
+.row h3{
+
+    font-size: 2.3vh;
+} 
+
+.sponsorlogo{
+
+     width: 100%;
+    margin-left: 25%;
+
+}
+.fitsponsor{
+    float: left;
+    width: 25%;
+
+}
+.sponsors{
+    height: 147px;
+    
+}
+
+
+footer{
+    background-color: blue;
+    width: 100%;
+}
+#img-section{
+    min-height: 80vh;
+    width: 100%;
+}
+
+#instasection{
+
+    background-color:rgb(235, 235, 235);
+    min-height: 60vh;
+    padding-top: 10;
+    overflow: hidden;
+    width: 100%;
+}
+#sponsor-section{
+    width: 100%;
+    height: 50vh;
+}
+#instasection h3{
+    text-align: center;
+    font-size: 50px;
+    font-family: arial, bold;
+
+
+
+
+}
+.instaimg img:hover{
+    opacity: 0.7;
+}
+.instaimg img{
+  object-fit: cover;
+  height: 34vh;
+  width: 34vh;
+  
+}
+.instaimg{
+    float: left;
+    max-width: 30vh;
+    margin: 27;
+}
+#circle{
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+    z-index: 100000;
+  position: relative;
+}
+
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+
+.arrow {
+  z-index: 100;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+  background-size: contain;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@media (max-width: 800px) {
+ .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #777;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+          color: #333;
+    }
+        .collapse{
+        position: relative;
+    }
+
+    #myFooter {
+        text-align: center;
+    }
+    #myFooter ul {
+
+    padding-left: 0;
+
+}
+
+#myFooter h5 {
+    padding-left: 0;
+
+}
+    
+    .col-sm-4{
+        margin-top: 5vh;
+    }
+    .hidden-column-text h3{
+    margin-top: 25%;
+    }
+    .sponsors{
+    margin: 20;
+    }
+    .img-responsive{
+        height: 70%;
+    }
+
+    .instaimg img{
+    height: 20vh;
+    width: 20vh;
+  
+}
+.instaimg{
+width: 33%;
+margin: 0;
+margin-top: 20;
+
+}
+    #instasection{
+        padding-bottom: 50;
+    }
+ .sponsorlogo{
+        margin: 0;
+    }
+.fitsponsor{
+width: 100%;
+
+}
+}
+@media (max-width: 500px) {
+.instaimg{
+width: 50%;
+
+
+}
+/*
+HEADER:
+
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+                <img id="logo-header" src="assets/bilder/litenlogo.png" alt="logo"></a>
+                
+            <a class="navbar-brand"> SL BC 2018</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a href="_layout.html">HJEM</a></li>
+				<li><a href="#">INFO</a></li>
+				<li><a href="idretter.html">IDRETTER</a></li>
+				<li><a href="#">NYHETER</a></li>
+                <li><a href="#">UNDERHOLDNING</a></li>
+                <li><a href="#">SAMARBEID</a></li>
+			</ul>
+			
+		</div>
+	</div>
+</nav>
+
+FOOTER:
+
+ <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2 class="logo"><a href="#"><img id="footerlogo" src="assets/bilder/litenlogo.png"> </a></h2>
+                </div>
+                <div class="col-sm-2">
+                    <h5>INFO</h5>
+                    <ul>
+                        <li><a href="#">Praktisks info</a></li>
+                        <li><a href="#">Hvem er vi</a></li>
+                        <li><a href="#">Kontakt oss</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Idretter</h5>
+                    <ul>
+                        <li><a href="#">Program</a></li>
+                        <li><a href="#">Tabell</a></li>
+                        <li><a href="#">Resultater</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Akutelt</h5>
+                    <ul>
+                        <li><a href="#">Nyheter</a></li>
+                        <li><a href="#">Underholdning</a>
+                        </li>
+                        <li><a href="#">Samarbeid</a>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default">Følg oss</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© SL Bergen Challenge 2018 </p>
+        </div>
+    </footer>
+*/

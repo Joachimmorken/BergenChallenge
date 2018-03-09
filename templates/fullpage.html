@@ -1,0 +1,287 @@
+
+<!--
+Credit icon:
+https://www.flaticon.com/authors/smashicons
+Smashicons from www.flaticon.com is licensed by http://creativecommons.org/licenses/by/3.0/ Creative Commons BY 3.0 CC 3.0 BY
+
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Fullpage</title>
+	<link rel="home" href="{{ siteUrl }}" />
+
+    <!-- Importing jQuery -->
+    
+    <script language="JavaScript" type="text/javascript" src="assets/scrips/jquery-3.2.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="assets/scrips/jquery-3.2.1.js"></script>
+    <script language="JavaScript" type="text/javascript" src="assets/scrips/myJQ.js"></script>
+    
+     
+    
+    <!-- Importing online stylesheets -->
+    
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="assets/scrips/jquery.fullPage.js"></script>
+    <script src="assets/css/jquery.fullPage.css"></script>
+    <!-- Importing local stylesheet -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/headfoot.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fullpage.css">
+    
+
+    
+    
+    
+
+
+</head>
+
+
+
+<body>
+    
+<!--
+    See style.css for further commenting on the navbar
+-->
+
+    
+<!--The CSS for the navbar underneath is in headfoot.css-->
+<nav class="navbar navbar-default">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+                <img id="logo-header" src="assets/bilder/litenlogo.png" alt="logo"></a>
+                
+            <a class="navbar-brand"> SL BC 2018</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li><a href="_layout.html">HJEM</a></li>
+				<li><a href="#">INFO</a></li>
+				<li><a href="idretter.html">IDRETTER</a></li>
+				<li><a href="#">NYHETER</a></li>
+                <li><a href="#">UNDERHOLDNING</a></li>
+                <li><a href="#">SAMARBEID</a></li>
+			</ul>
+			
+		</div>
+	</div>
+</nav>
+<!--The CSS for the above is in headfoot.css--> 
+
+<div id="fullpage">
+    <div class="section">
+<header>
+        <div id="bakgrunn"></div>
+        <img id="logo" src="assets/bilder/SL%20BC%20ny%20logo.png" alt="logo" >
+
+
+</header>
+</div>
+<!--
+    
+    Container containing the pictures and text beneath the header.
+
+    col-sm-4 says that a small column is to take up 4/12 "grid-squares" of the row.
+
+    class "column-text" to change the color of the text
+    class "container h3/p" to change the size of the text
+    class "img-responsive" to change the style of the picture
+
+
+    !!!WARNING!!!WARNING!!!WARNING!!!WARNING!!!WARNING!!!WARNING!!!
+        If you change/add/remove any tags in "img-responsive", beware that the jQuery code migth not work, because it looks for child elements of "img-responsive" to execute the code on.
+    !!!WARNING!!!WARNING!!!WARNING!!!WARNING!!!WARNING!!!WARNING!!!
+--->
+    
+ <div class="section">
+<div class="container text-center">
+<div id="img-section">
+	<h3>AKTUELT</h3><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <!--
+                    Assigned id's: bball, team and trophy, to apply different background images in style.css
+                -->
+                <div id="bball" class="img-responsive">
+                    <div class="colorlayer">
+                    <div class="column-text">
+                        <div class="column-text-center">
+                        <h3>SPORT FOR ALLE</h3>
+                         <p class="column-underlead">Bli med på det utrolige for alle og en hver</p>
+                        
+                        </div>
+                    </div>
+                    <div class="hidden-column-text">
+
+                        <h3>SPORT FOR ALLE</h3>
+                        <a href="#"><img src="assets/bilder/plus.svg" alt="read more"></a>
+                        <p class="hidden-column-underlead">Les innlegg</p>
+
+                    </div>
+                </div>
+             </div>
+            </div>
+            <div class="col-sm-4">
+                <!--
+                    Assigned id's: bball, team and trophy, to apply different background images in style.css
+                -->
+                <div id="team" class="img-responsive">
+                    <div class="colorlayer">
+                    <div class="column-text">
+                        <div class="column-text-center">
+                        <h3>SPORT FOR ALLE</h3>
+                         <p class="column-underlead">Bli med på det utrolige for alle og en hver</p>
+                        
+                        </div>
+                    </div>
+                    <div class="hidden-column-text">
+
+                        <h3>SPORT FOR ALLE</h3>
+                        <a href="#"><img src="assets/bilder/plus.svg" alt="read more"></a>
+                        <p class="hidden-column-underlead">Les innlegg</p>
+
+                    </div>
+                </div>
+             </div>
+            </div>
+             <div class="col-sm-4">
+                <!--
+                    Assigned id's: bball, team and trophy, to apply different background images in style.css
+                -->
+                <div id="trophy" class="img-responsive">
+                    <div class="colorlayer">
+                    <div class="column-text">
+                        <div class="column-text-center">
+                        <h3>SPORT FOR ALLE</h3>
+                         <p class="column-underlead">Bli med på det utrolige for alle og en hver</p>
+                        
+                        </div>
+                    </div>
+                    <div class="hidden-column-text">
+                        <h3>SPORT FOR ALLE</h3>
+                        <a href="#"><img src="assets/bilder/plus.svg" alt="read more"></a>
+                        <p class="hidden-column-underlead">Les innlegg</p>
+
+                    </div>
+                </div>
+             </div>
+            </div>
+    </div>
+    </div>
+    </div>
+    </div>
+ <div class="section">
+<div id="instasection">
+    <div class="container text-center">
+    <div class="instagram-section">
+        <h3>INSTAGRAM</h3>
+        <div id="instafeed" class="row gallery"></div>
+     </div>
+</div>
+</div>
+    </div>
+ <div class="section">
+
+<div class="container text-center">
+<div id="sponsor-section">    
+<div class="container text-center">
+	<h3>SAMARBEID</h3><br>
+        <div class="row">
+            <div class="sp">
+            <div class="sponsorlogo">
+                <div class="fitsponsor">
+                <img class="sponsors" src="assets/bilder/DNB_roheline_logo.jpg" alt="DNB-logo">
+                </div>
+                
+                <div class="fitsponsor">
+                <img class="sponsors"
+                     src="assets/bilder/NSI%20logo%20norsk.png"
+                     alt="NSI-logo">
+                </div>
+            </div>
+        </div>
+            </div>
+</div>
+ </div> 
+ </div>
+
+
+        
+       
+<br>
+    <!--The CSS for the footer is in the headfoot.css file-->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2 class="logo"><a href="#"><img id="footerlogo" src="assets/bilder/litenlogo.png"> </a></h2>
+                </div>
+                <div class="col-sm-2">
+                    <h5>INFO</h5>
+                    <ul>
+                        <li><a href="#">Praktisks info</a></li>
+                        <li><a href="#">Hvem er vi</a></li>
+                        <li><a href="#">Kontakt oss</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Idretter</h5>
+                    <ul>
+                        <li><a href="#">Program</a></li>
+                        <li><a href="#">Tabell</a></li>
+                        <li><a href="#">Resultater</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Akutelt</h5>
+                    <ul>
+                        <li><a href="#">Nyheter</a></li>
+                        <li><a href="#">Underholdning</a>
+                        </li>
+                        <li><a href="#">Samarbeid</a>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default">Følg oss</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© SL Bergen Challenge 2018 </p>
+        </div>
+    </footer>
+
+</div>
+
+    </div>
+
+ <script language="JavaScript" type="text/javascript" src="assets/scrips/jquery.magnific.js"></script>
+<script language="JavaScript" type="text/javascript" src="assets/scrips/instafeed.min.js"></script>
+<script language="JavaScript" type="text/javascript" src="assets/scrips/custom.js"></script>
+<script language="JavaScript" type="text/javascript" src="assets/scrips/progressbar.js"></script>
+<script language="JavaScript" type="text/javascript" src="assets/scrips/require.js"></script>
+    
+
+
+</body>
+</html>
